@@ -1,0 +1,536 @@
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+@font-face {
+  font-family: "vazir";
+  src: url("../Fonts/vazir/Vazir.woff") format("woff"), url("../Fonts/vazir/Vazir.woff2") format("woff2");
+}
+@font-face {
+  font-family: "shabnam";
+  src: url("../Fonts/shabnam/Shabnam.woff") format("woff"), url("../Fonts/shabnam/Shabnam.woff2") format("woff2");
+}
+@font-face {
+  font-family: "ubuntu";
+  src: url("../Fonts/Ubuntu/Ubuntu-Regular.ttf");
+}
+html {
+  scroll-behavior: smooth;
+}
+
+a {
+  text-decoration: none !important;
+}
+
+.top-scroll {
+  width: 50px;
+  height: 50px;
+  left: 15px;
+  z-index: 1000;
+  cursor: pointer;
+}
+
+.curs-point {
+  cursor: pointer !important;
+}
+
+.bg-cream {
+  background-color: bisque !important;
+}
+
+.bg-white {
+  background-color: white;
+}
+
+.bg-red {
+  background-color: red;
+}
+
+.bg-green {
+  background-color: green;
+}
+
+.bg-gray {
+  background-color: gray;
+}
+
+.bg-navy {
+  background-color: navy;
+}
+
+.bg-blue {
+  background-color: blue;
+}
+
+nav {
+  width: 100vw;
+  z-index: 50 !important;
+  min-height: calc(3.6rem + 16px) !important;
+  position: fixed !important;
+}
+
+.fon {
+  font-family: "vazir";
+}
+
+.en-font {
+  font-family: "ubuntu";
+}
+
+.nav-font-color {
+  color: #545540;
+}
+
+.back-color {
+  background-color: rgb(194, 194, 194);
+}
+
+.key-arrow {
+  transition: all 0.4s;
+}
+
+.arrow-active {
+  transform: rotate(-90deg);
+}
+
+.br-li-bor-cu {
+  border-bottom: 1px solid gray;
+  cursor: pointer;
+}
+
+.megamenu-link:hover .megamenu-ul-menu {
+  display: block !important;
+}
+
+.mg-link::after {
+  content: "";
+  width: 0;
+  transition: all 0.5s !important;
+}
+
+.megamenu-link:hover .mg-link::after {
+  position: absolute;
+  height: 2px;
+  background-color: #474747;
+  width: 110%;
+  bottom: -5px;
+  right: 0;
+}
+
+.megamenu-link {
+  cursor: pointer;
+}
+
+.megamenu-ul-menu {
+  transition: all 0.5s;
+  top: 100% !important;
+  right: 0 !important;
+  height: 25rem;
+}
+
+.br-cu-fs {
+  font-size: 15px;
+}
+
+.borger-ul-list {
+  color: #bfbec5 !important;
+  border-color: gray !important;
+  font-size: 15px !important;
+}
+
+.borgermenu-icon {
+  cursor: pointer;
+}
+
+.offcanvas-backdrop {
+  margin-top: 0 !important;
+}
+
+.offcanvas::-webkit-scrollbar {
+  width: 5px;
+}
+
+.offcanvas::-webkit-scrollbar-track {
+  background-color: #212529;
+}
+
+.offcanvas::-webkit-scrollbar-thumb {
+  background-color: #474747;
+}
+
+header .header-background {
+  height: 48rem;
+}
+header .header-qoute {
+  height: 14rem;
+  direction: ltr;
+  text-align: justify;
+  font-size: 1.5rem;
+}
+
+section .pro-disc-card {
+  width: 23% !important;
+  height: 400px !important;
+}
+section .desc-content {
+  border-radius: 35px 0 0 0 !important;
+  transition: height 1s !important;
+}
+section .pro-disc-card:hover .desc-content {
+  height: 100% !important;
+  border-radius: 0 !important;
+}
+section .pro-disc-card:hover .disc-add-card {
+  display: flex !important;
+}
+section .carousel-control-prev,
+section .carousel-control-next {
+  width: 100px;
+}
+section .caro-ind-btns {
+  width: 10px !important;
+  height: 10px !important;
+  border-radius: 50%;
+}
+section .sec-video {
+  height: 900px !important;
+  padding: 250px 0;
+}
+section .sec-video video {
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+section .sec-img-holder {
+  height: 500px !important;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+section .sec-firstp-products {
+  padding: 100px 0;
+  background-color: #f8f9fa !important;
+}
+section .sec-firstp-products .sec-moving-letter {
+  background-color: #f8f9fa;
+  min-height: 40px;
+}
+section .sec-firstp-products .sec-moving-letter .sml-text {
+  color: #ef233c;
+  font-size: 17px !important;
+}
+section .sec-firstp-products .sec-moving-letter .mov-anim {
+  background: linear-gradient(to right, transparent, #f8f9fa, transparent) !important;
+}
+section .c-card {
+  height: 600px !important;
+}
+section .c-card .c-card-image {
+  height: 85%;
+}
+section .c-card .c-card-content {
+  height: 15%;
+}
+section .c-card .c-card-content .c-card-info .card-size-color-holder .card-size {
+  width: 20px !important;
+  height: 20px !important;
+}
+
+.fs-1-7 {
+  font-size: 20px !important;
+}
+
+.fs-1-8 {
+  font-size: 18px !important;
+}
+
+.mb-250 {
+  margin-bottom: 250px !important;
+}
+
+footer .email-contact {
+  direction: ltr;
+}
+
+.cu-email-btn {
+  border: 2px solid white !important;
+  color: white !important;
+  transition: all 0.5s;
+}
+
+.cu-email-btn:hover {
+  background-color: white !important;
+  color: black !important;
+}
+
+.soci-icon i {
+  transition: all 0.3s;
+}
+
+.soci-icon:hover i {
+  color: #f71735;
+}
+
+.location-holder {
+  filter: brightness(50%);
+  transition: filter 0.5s;
+}
+
+.location-holder:hover {
+  filter: brightness(100%);
+}
+
+.abus-dark-bg {
+  background-color: #0a0a0a !important;
+}
+
+.abus-dark-con-bg {
+  background-color: #3a5169 !important;
+}
+
+.section-about-us-page .abus-header {
+  height: 200px !important;
+}
+.section-about-us-page .abus-about-info .abus-about-info-shape-top {
+  height: 300px;
+}
+.section-about-us-page .abus-about-info .abus-info-body {
+  text-align: justify;
+  font-size: 24px;
+}
+.section-about-us-page .abus-shape-top,
+.section-about-us-page .abus-shape-bottom {
+  height: 300px;
+}
+.section-about-us-page .abus-products-page .abus-product-page-link-a::after {
+  content: "" !important;
+  position: absolute !important;
+  width: 0 !important;
+  height: 2px !important;
+  background-color: white !important;
+  bottom: 0 !important;
+  right: 50% !important;
+  transition: all 0.7s !important;
+}
+.section-about-us-page .abus-products-page .abus-product-page-link-a:hover::after {
+  width: 100% !important;
+  right: 0 !important;
+}
+.section-about-us-page .abus-designers-card .abus-card {
+  width: 300px;
+  height: 400px;
+}
+.section-about-us-page .abus-designers-card .abus-card-image {
+  transition: transform 1s;
+}
+.section-about-us-page .abus-designers-card .abus-card:hover .abus-card-image {
+  transform: scale(1.4);
+}
+.section-about-us-page .abus-designers-card .abus-card:hover .abus-card-content {
+  opacity: 1;
+}
+.section-about-us-page .abus-designers-card .abus-card-content-info h3 {
+  letter-spacing: 3px;
+}
+.section-about-us-page .abus-designers-card .abus-card-content {
+  transition: opacity 1s;
+  opacity: 0;
+}
+.section-about-us-page .custom-shape-divider-top-1677420917 {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  overflow: hidden;
+  line-height: 0;
+}
+.section-about-us-page .custom-shape-divider-top-1677420917 svg {
+  position: relative;
+  display: block;
+  width: calc(100% + 1.3px);
+  height: 300px;
+  transform: rotateY(180deg);
+}
+.section-about-us-page .custom-shape-divider-top-1677420917 .shape-fill {
+  fill: white;
+}
+.section-about-us-page .custom-shape-divider-bottom-1677429964 {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  overflow: hidden;
+  line-height: 0;
+  transform: rotate(180deg);
+}
+.section-about-us-page .custom-shape-divider-bottom-1677429964 svg {
+  position: relative;
+  display: block;
+  width: calc(100% + 1.3px);
+  height: 300px;
+  transform: rotateY(180deg);
+}
+.section-about-us-page .custom-shape-divider-bottom-1677429964 .shape-fill {
+  fill: #ffffff;
+}
+
+.product-page .product-page-i-c-orginal-image {
+  height: 550px !important;
+}
+.product-page .product-image-card-sm {
+  height: 75px !important;
+}
+.product-page .product-sm-img {
+  cursor: crosshair;
+}
+
+.products-body .btn-check-brand {
+  padding: 13px;
+}
+.products-body .c-pro-card .c-pro-card-image-content {
+  height: 400px;
+}
+.products-body .pro-filter-container {
+  min-height: 400px;
+}
+
+.login-cont {
+  width: 100% !important;
+  height: 100vh !important;
+  background: linear-gradient(to top right, #0b090c, #18162b, #3d5595);
+}
+
+.login-form-container {
+  width: 60%;
+  height: 500px;
+  z-index: 1000;
+}
+.login-form-container .logsign-form .logsign-toggle-head {
+  height: 15% !important;
+}
+.login-form-container .logsign-form .logsign-toggle-head .logsign-toggle-holder {
+  width: 200px;
+  height: 100%;
+}
+.login-form-container .logsign-form .logsign-toggle-head .logsign-toggle-holder .login-toggle-btn,
+.login-form-container .logsign-form .logsign-toggle-head .logsign-toggle-holder .register-toggle-btn {
+  background-color: transparent;
+  position: relative;
+}
+.login-form-container .logsign-form .logsign-toggle-head .logsign-toggle-holder .login-toggle-btn::before,
+.login-form-container .logsign-form .logsign-toggle-head .logsign-toggle-holder .register-toggle-btn::before {
+  content: "";
+  width: 0;
+  height: 3px;
+  bottom: 0;
+  right: 50%;
+  position: absolute;
+  background-color: #7f8fd5;
+  transition: all 0.5s;
+}
+.login-form-container .logsign-form .logsign-toggle-head .logsign-toggle-holder .toggle-btn-active {
+  color: #7f8fd5 !important;
+}
+.login-form-container .logsign-form .logsign-toggle-head .logsign-toggle-holder .toggle-btn-active::before {
+  width: 100%;
+  right: 0;
+}
+.login-form-container .logsign-form .logsign-forms-holder {
+  height: 85% !important;
+}
+.login-form-container .logsign-form .logsign-forms-holder .login-inps {
+  height: 40px;
+  border-bottom: 1px solid black !important;
+}
+.login-form-container .logsign-form .logsign-forms-holder .login-inps input {
+  outline: 0;
+  font-size: 16px;
+}
+.login-form-container .logsign-form .logsign-forms-holder .validate-alert {
+  border-bottom-color: red !important;
+}
+.login-form-container .logsign-form .logsign-forms-holder .form-active {
+  display: flex !important;
+}
+
+.login-bg-image {
+  -o-object-fit: fill;
+     object-fit: fill;
+}
+
+.adding-product-db-container {
+  min-height: 100vh !important;
+  background: linear-gradient(to bottom right, #001d3d, #003566);
+}
+
+.product-checkout-cont {
+  height: 100vh !important;
+  background: linear-gradient(to bottom left, #0b090c, #18162b, #3d5595) !important;
+}
+.product-checkout-cont .product-check-card .product-check-card-image {
+  width: 25%;
+  height: 250px;
+}
+.product-checkout-cont .product-check-card .product-check-card-info {
+  width: 50%;
+}
+.product-checkout-cont .product-check-card .product-check-card-count {
+  width: 25%;
+}
+.product-checkout-cont .product-check-c-scrollbar::-webkit-scrollbar {
+  width: 8px;
+}
+.product-checkout-cont .product-check-c-scrollbar::-webkit-scrollbar-track {
+  background-color: #acacac;
+  border-radius: 10px;
+}
+.product-checkout-cont .product-check-c-scrollbar::-webkit-scrollbar-thumb {
+  background: linear-gradient(to bottom, #0b090c, #18162b, #3d5595);
+  border-radius: 10px;
+}
+
+.admin-login-cont {
+  min-height: 100vh;
+  background: url("../Images/admin-login-bg.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.admin-login-cont .admin-login-form {
+  width: 350px;
+}
+
+@media screen and (max-width: 992px) {
+  nav .megamenu {
+    display: none !important;
+  }
+  nav .borgermenu {
+    display: flex !important;
+  }
+  header .header-qoute {
+    font-size: 1.2rem;
+  }
+}
+@media only screen and (max-width: 600px) {
+  header .header-qoute {
+    font-size: 1rem;
+  }
+}
+@media only screen and (max-width: 992px) {
+  section .pro-disc-card {
+    width: 30% !important;
+  }
+}
+@media only screen and (max-width: 768px) {
+  section .pro-disc-card {
+    width: 46% !important;
+  }
+  .login-form-container {
+    width: 80%;
+  }
+}
+@media only screen and (max-width: 576px) {
+  section .pro-disc-card {
+    width: 98% !important;
+  }
+}/*# sourceMappingURL=main.css.map */
